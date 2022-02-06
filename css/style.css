@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 1080px;
+  height: 800px;
+  background: red;
+  position: relative;
+}
+
+div {
+  position: absolute;
+  -webkit-animation-name: miki;
+          animation-name: miki;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+img {
+  width: 400px;
+  height: 500px;
+}
+
+@-webkit-keyframes miki {
+  0% {
+    left: 500px;
+    top: 0px;
+    -webkit-animation: miki 1s alternate 4 infinite;
+            animation: miki 1s alternate 4 infinite;
+  }
+  50% {
+    left: 300px;
+    top: 10px;
+    -webkit-animation: miki 1s alternate 4 infinite;
+            animation: miki 1s alternate 4 infinite;
+  }
+  100% {
+    left: 200px;
+    top: 30px;
+    -webkit-animation: miki 1s alternate 4 infinite;
+            animation: miki 1s alternate 4 infinite;
+  }
+}
+
+@keyframes miki {
+  0% {
+    left: 500px;
+    top: 0px;
+    -webkit-animation: miki 1s alternate 4 infinite;
+            animation: miki 1s alternate 4 infinite;
+  }
+  50% {
+    left: 300px;
+    top: 10px;
+    -webkit-animation: miki 1s alternate 4 infinite;
+            animation: miki 1s alternate 4 infinite;
+  }
+  100% {
+    left: 200px;
+    top: 30px;
+    -webkit-animation: miki 1s alternate 4 infinite;
+            animation: miki 1s alternate 4 infinite;
+  }
+}

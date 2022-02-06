@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 1080px;
+  height: 800px;
+  background: red;
+  position: relative;
+}
+
+div {
+  position: absolute;
+  animation-name: miki;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+img {
+  width: 400px;
+  height: 500px;
+}
+@keyframes miki {
+  0% {
+    left: 500px;
+    top: 0px;
+    animation: miki 1s alternate 4 infinite;
+  }
+  50% {
+    left: 300px;
+    top: 10px;
+    animation: miki 1s alternate 4 infinite;
+  }
+  100% {
+    left: 200px;
+    top: 30px;
+    animation: miki 1s alternate 4 infinite;
+  }
+}
